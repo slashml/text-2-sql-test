@@ -42,4 +42,28 @@ This Streamlit app showcases a text-to-SQL model from slashML, allowing users to
    - Enter your question about the database in the "Ask a Question" section.
    - Click the "Generate SQL" button to generate a SQL query.
    - View the generated SQL query in the "SQL Query Result" section.
-   - Modify the database schema in th
+   - Modify the database schema in the "Database Schema" section if needed.
+   - Customize special instructions in the "Special Instructions" section.
+
+## Customizing the App
+
+- **Database Schema**: You can modify the default schema or add your own in the "Database Schema" section.
+- **Special Instructions**: Add or modify instructions for the SQL generation in the "Special Instructions" section.
+
+## API Integration
+
+This app uses the slashML API to generate SQL queries. Make sure you have the correct API endpoint and credentials set up in the `generate_sql_query` function.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to slashML for providing the text-to-SQL model API.
+- Built with Streamlit, making it easy to create data apps.
+
