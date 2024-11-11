@@ -2,9 +2,24 @@ import streamlit as st
 import requests
 import json
 from datetime import datetime
+import os
 
 # Set page config to wide mode
 st.set_page_config(layout="wide")
+
+hf_token = os.getenv("HF_TOKEN")
+var_1 = os.getenv("var_1")
+var_2 = os.getenv("var_2")
+var_3 = os.getenv("var_3")
+
+# Display environment variables
+st.sidebar.header("Environment Variables")
+st.sidebar.write("HF_TOKEN:", hf_token)
+st.sidebar.write("var_1 in Streamlit:", var_1)
+st.sidebar.write("var_2 in Streamlit:", var_2)
+st.sidebar.write("var_3 in Streamlit:", var_3)
+
+
 
 def generate_sql_query(question, schema, instructions):
     base_prompt = f"""### Task
